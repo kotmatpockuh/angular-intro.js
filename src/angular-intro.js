@@ -89,7 +89,6 @@ ngIntroDirective.directive('ngIntroOptions', ['$timeout', function ($timeout) {
 
             scope.ngIntroExitMethod = function (callback) {
                 intro.exit();
-                callback();
             };
 
             if (scope.ngIntroAutostart()) {
