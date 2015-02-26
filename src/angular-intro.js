@@ -88,7 +88,7 @@ ngIntroDirective.directive('ngIntroOptions', ['$timeout', function ($timeout) {
             };
 
             scope.ngIntroExitMethod = function (callback) {
-                intro.exit();
+                intro.exit(); //TODO check callBack
             };
 
             if (scope.ngIntroAutostart()) {
