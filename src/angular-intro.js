@@ -34,6 +34,14 @@ ngIntroDirective.directive('ngIntroOptions', ['$timeout', function ($timeout) {
                 } else {
                     intro = introJs();
                 }
+                
+                angular.forEach(scope.ngIntroOptions.steps, function(el) {
+                    el.intro = $translate.instant(el.translateItem);
+                });
+
+                scope.ngIntroOptions.nextLabel = '<strong>' + $translate.instant('SKIP_STEP') + '</strong>';
+                scope.ngIntroOptions.skipLabel = '<strong>' + $translate.instant('SKIP_TUTORIAL') + '</strong>';
+                scope.ngIntroOptions.doneLabel = '<strong>' + $translate.instant('SKIP_TUTORIAL') + '</strong>';
 
                 intro.setOptions(scope.ngIntroOptions);
                 
