@@ -13,7 +13,7 @@
   ],
   "dependencies": {
     "angular": "~1.3.x",
-    "intro.js": "1.0.0"
+    "intro.js": "https://github.com/kotmatpockuh/intro.js.git#3b0412a939c03d1389b3003542733822693fb8d4"
   },
   "devDependencies": {}
 }
